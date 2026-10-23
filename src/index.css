@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kinetic-bg: #F2F4F6;
+  --color-kinetic-surface: #FFFFFF;
+  --color-kinetic-primary: #121820;
+  --color-kinetic-primary-light: #E8EBEF;
+  --color-kinetic-accent-1: #0099B8;
+  --color-kinetic-accent-2: #F07D3A;
+  --color-kinetic-accent-light: #E4F5F8;
+  --color-kinetic-green: #3D9B6C;
+  --color-kinetic-text-secondary: #4A5259;
+  --color-kinetic-text-muted: #7D848C;
+  --color-kinetic-border: #D5DAE0;
+
+  --font-barlow: "Barlow Condensed", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-sketch: "Cabin Sketch", cursive;
+
+  --shadow-level-0: 0 2px 8px rgba(18,24,32,0.04);
+  --shadow-level-1: 0 8px 20px rgba(18,24,32,0.08);
+  --shadow-level-2: 0 16px 36px rgba(18,24,32,0.14);
+}
+
+body {
+  background-color: var(--color-kinetic-bg);
+  color: var(--color-kinetic-primary);
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+}
+
+/* Custom utilities */
+.velocity-lines {
+  background-image: repeating-linear-gradient(15deg, transparent, transparent 10px, rgba(18,24,32,0.02) 10px, rgba(18,24,32,0.02) 11px);
+}
+
+.countdown-pulse {
+  animation: countdownPulse 3s infinite;
+}
+
+@keyframes countdownPulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 153, 184, 0.4); }
+  15% { box-shadow: 0 0 0 8px rgba(0, 153, 184, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 153, 184, 0); }
+}
+
+/* Custom image filter */
+.img-kinetic {
+  filter: brightness(1.03) contrast(1.08) saturate(1.02);
+}
+
+/* Hide scrollbar for sliders */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

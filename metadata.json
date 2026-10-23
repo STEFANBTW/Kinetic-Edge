@@ -1,0 +1,8 @@
+{
+  "name": "Kinetic Edge Physiotherapy",
+  "description": "Elite-level rehabilitation and physiotherapy for everyday athletes. We measure every step of your progress.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
