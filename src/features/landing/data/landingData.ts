@@ -1,4 +1,7 @@
 import { ConditionArea, Pillar, TeamMember, Testimonial } from "../types/landing.types";
+import jackImg from "../../../assets/images/physio_jack_1784731754629.jpg";
+import sarahImg from "../../../assets/images/physio_sarah_1784731769068.jpg";
+import marcusImg from "../../../assets/images/physio_marcus_1784731782137.jpg";
 
 export const PILLARS_DATA: Pillar[] = [
   {
@@ -115,7 +118,7 @@ export const TEAM_MEMBERS_DATA: TeamMember[] = [
     role: "Lead Physiotherapist & S&C Coach",
     creds: "B.Phty, Mast. Sports Rehab",
     quote: "Rehabilitation is just training in the presence of an injury. We don't stop moving, we move smarter.",
-    img: "/src/assets/images/physio_jack_1784731754629.jpg",
+    img: jackImg,
   },
   {
     id: "sarah",
@@ -123,7 +126,7 @@ export const TEAM_MEMBERS_DATA: TeamMember[] = [
     role: "Exercise Physiologist",
     creds: "B.ExSc, ESSAM AEP",
     quote: "Your body adapts to what you demand of it. My job is to help you send it the right signals.",
-    img: "/src/assets/images/physio_sarah_1784731769068.jpg",
+    img: sarahImg,
   },
   {
     id: "marcus",
@@ -131,7 +134,7 @@ export const TEAM_MEMBERS_DATA: TeamMember[] = [
     role: "Post-Operative Specialist",
     creds: "DPT, OCS",
     quote: "Surgery fixes the structure; we restore the function. The real work begins after you leave the hospital.",
-    img: "/src/assets/images/physio_marcus_1784731782137.jpg",
+    img: marcusImg,
   },
 ];
 

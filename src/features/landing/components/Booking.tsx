@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { Phone, ArrowRight } from "lucide-react";
 import { useBookingForm } from "../hooks/useBookingForm";
+import bookingImg from "../../../assets/images/booking_physio_1784731794819.jpg";
 
 export default function Booking() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -50,7 +51,7 @@ export default function Booking() {
       {/* Left: Image */}
       <div className="booking-img w-full lg:w-1/2 h-[400px] lg:h-auto min-h-[600px] relative">
         <img
-          src="/src/assets/images/booking_physio_1784731794819.jpg"
+          src={bookingImg}
           alt="Confident physiotherapist smiling in gym"
           className="absolute inset-0 w-full h-full object-cover img-kinetic"
         />

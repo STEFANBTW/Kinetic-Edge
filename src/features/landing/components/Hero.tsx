@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import heroImg from "../../../assets/images/physio_hero_1784731738015.jpg";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -87,7 +88,7 @@ export default function Hero() {
         }}
       >
         <img
-          src="/src/assets/images/physio_hero_1784731738015.jpg"
+          src={heroImg}
           alt="Physiotherapist working with patient"
           className="w-full h-full object-cover object-center img-kinetic opacity-90"
         />

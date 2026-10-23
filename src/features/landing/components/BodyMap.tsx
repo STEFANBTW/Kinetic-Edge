@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { useBodyMap } from "../hooks/useBodyMap";
+import anatomyImg from "../../../assets/images/athlete_anatomy_model_1784732597631.jpg";
 
 export default function BodyMap() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -61,7 +62,7 @@ export default function BodyMap() {
         <div className="w-full lg:w-1/2 flex justify-center relative min-h-[400px] lg:min-h-[600px] body-map-outline">
           <div className="relative w-full max-w-[400px] aspect-[3/4]">
             <img 
-              src="/src/assets/images/athlete_anatomy_model_1784732597631.jpg"
+              src={anatomyImg}
               alt="Anatomical Body Map"
               className="w-full h-full object-cover mix-blend-multiply drop-shadow-md opacity-80 grayscale rounded-lg"
             />
